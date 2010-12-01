@@ -8,7 +8,7 @@ __all__ = ['clean_string', 'ResultSet', "ESRange", "ESRangeOp"]
 # Characters that are part of Lucene query syntax must be stripped
 # from user input: + - && || ! ( ) { } [ ] ^ " ~ * ? : \
 # See: http://lucene.apache.org/java/3_0_2/queryparsersyntax.html#Escaping
-SPECIAL_CHARS = [33, 34, 38, 40, 41, 42, 58, 63, 91, 92, 93, 94, 123, 124, 125, 126]
+SPECIAL_CHARS = [33, 34, 38, 40, 41, 42, 45, 58, 63, 91, 92, 93, 94, 123, 124, 125, 126]
 UNI_SPECIAL_CHARS = dict((c, None) for c in SPECIAL_CHARS)
 STR_SPECIAL_CHARS = ''.join([chr(c) for c in SPECIAL_CHARS])
 
